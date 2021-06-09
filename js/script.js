@@ -12,9 +12,9 @@ function sameLen(x, y) {
 }
 
 if (sameLen(wordOne, wordTwo)) {
-    console.log(wordOne + " " + wordTwo);
+    document.getElementById("printer").innerHTML=wordOne + " " + wordTwo;
 } else if(!sameLen(wordOne, wordTwo) && wordOne.length<wordTwo.length) {
-    console.log(wordTwo);
+    document.getElementById("printer").innerHTML=wordTwo;
 } else {
-    console.log(wordOne);
+    document.getElementById("printer").innerHTML=wordOne;
 };
